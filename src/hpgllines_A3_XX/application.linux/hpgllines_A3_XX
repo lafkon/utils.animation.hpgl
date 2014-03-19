@@ -1,0 +1,4 @@
+#!/bin/sh
+
+APPDIR=$(dirname "$0")
+java  -Djava.library.path="$APPDIR" -cp "$APPDIR/lib/hpgllines_A3_XX.jar:$APPDIR/lib/core.jar:$APPDIR/lib/geomerative.jar:$APPDIR/lib/batikfont.jar" hpgllines_A3_XX
