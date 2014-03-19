@@ -54,6 +54,7 @@ wait () {
   inkscape --export-pdf=${SRCSVG%%.*}.pdf $SRCSVG
 
 # PLACE ON A3
+
   e () { echo $1 >> $OUT ; }
 # ----------------------------------------------------------------------- #
 
@@ -83,8 +84,8 @@ wait () {
   mv $TMPDIR/${OUT%%.*}.pdf ${SRCSVG%%.*}.pdf
 
 # ------------------------------------------------------------------------- #
-  # FORTH-AND-BACK CONVERTING 
-  # TO PREVENT GEOMERATIVE ERRORS
+# FORTH-AND-BACK CONVERTING 
+# TO PREVENT GEOMERATIVE ERRORS
 
   pdf2ps ${SRCSVG%%.*}.pdf ${SRCSVG%%.*}.ps
   ps2pdf ${SRCSVG%%.*}.ps ${SRCSVG%%.*}.pdf
@@ -100,10 +101,10 @@ wait () {
 
   echo $SVG4HPGLLINES > svg.i
 
-  # START VIRTUAL XSERVER FOR PROCESSING HEADLESS #######################
-  # Xvfb :1 -screen 0 1152x900x8 -fbdir /tmp &
+# START VIRTUAL XSERVER FOR PROCESSING HEADLESS #######################
+# Xvfb :1 -screen 0 1152x900x8 -fbdir /tmp &
 
-  # EXPORT DISPLAY FOR PROCESSING HEADLESS ##############################
+# EXPORT DISPLAY FOR PROCESSING HEADLESS ##############################
   export DISPLAY=localhost:1.0 ##########################################
 
   SKETCHNAME=hpgllines_A3_XX
