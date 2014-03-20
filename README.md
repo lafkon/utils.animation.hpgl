@@ -1,1 +1,1 @@
-convert image sequences to vector and them hpgl
+convert image sequences to vector and then hpgl
