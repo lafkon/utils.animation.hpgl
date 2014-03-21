@@ -77,6 +77,8 @@ output the last part of files
 wc (GNU coreutils) 6.10
 print newline, word, and byte counts for each file
 
+Xvfb (xorg-server 1.4.2)
+virtual framebuffer X server for X Version 11
 
 trace_seq.sh
 ------------
