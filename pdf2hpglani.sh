@@ -99,7 +99,7 @@ for PDF in `ls $FOLDER/*.pdf`
 # EXPORT DISPLAY FOR PROCESSING HEADLESS ####################################
   export DISPLAY=localhost:1.0 ##############################################
 
-  SKETCHNAME=hpgllines_A3_XX
+  SKETCHNAME=svg2hpgl
 
   APPDIR=$(dirname "$0")
   LIBDIR=$APPDIR/src/$SKETCHNAME/application.linux/lib
